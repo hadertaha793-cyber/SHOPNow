@@ -35,9 +35,4 @@ Un projet Android standard n'exécute pas forcément une fonction `main()` comme
 - Fonctions d'extension
 - Lambdas et référence de fonction (`::estPayee`)
 
-## Avant de rendre le TP
 
-- Lis et comprends chaque méthode : le professeur peut demander de l'expliquer.
-- Exécute les tests et prends des captures d'écran de la console pour le dépôt GitHub.
-- Le bonus `enum class StatutCommande` et l'écriture de l'historique dans un fichier ne sont pas inclus dans cette version de base.
-- Le code suit les signatures imposées dans le PDF pour les classes principales. La classe `Commande` utilise le statut `String` comme demandé dans la partie obligatoire.
