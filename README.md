@@ -1,4 +1,4 @@
-# ShopNow — Kotlin TP
+# ShopNow Kotlin TP
 
 Projet pédagogique simple pour le TP de gestion de boutique en ligne ShopNow.
 
