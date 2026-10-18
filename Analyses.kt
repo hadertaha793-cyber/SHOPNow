@@ -16,7 +16,7 @@ fun filtrerCommandes(
     return commandes.filter(critere)
 }
 
-// Jeu de données fourni dans le TP, réutilisé pour tester les fonctions de collection.
+
 fun jeuDeDonnees(): List<Commande> {
     val amine = Client(1, "Amine", "Safi")
     val sara = Client(2, "Sara", "Marrakech")
