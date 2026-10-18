@@ -15,15 +15,6 @@ Projet pédagogique simple pour le TP de gestion de boutique en ligne ShopNow.
 - `Extensions.kt` : validation de numéro et formatage en dhs.
 - `Main.kt` : scénario de démonstration.
 
-## Comment l'utiliser
-
-1. Dans Android Studio, crée un projet **Kotlin/JVM** (console) pour lancer directement `main()`.
-2. Place tous les fichiers `.kt` dans le même dossier source/package.
-3. Si tu utilises un `package` en haut de tes fichiers, mets le même package dans chaque fichier.
-4. Lance `Main.kt`.
-
-Un projet Android standard n'exécute pas forcément une fonction `main()` comme une application console. Pour ce dossier de TP, un projet Kotlin/JVM est le choix le plus simple.
-
 ## Notions couvertes
 
 - Classes, objets, héritage et classe abstraite
