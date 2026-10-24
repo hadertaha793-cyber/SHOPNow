@@ -1,7 +1,5 @@
 fun main() {
-    println("========== SHOPNOW ==========")
-
-    // Jalon 2 : produits, TVA, remise et stock
+    //  produits, TVA, remise et stock
     println("\n1. PRODUITS, TVA ET STOCK")
     val laptop = ProduitElectronique("E1", "Laptop", 5000.0, 10, 24)
     val riz = ProduitAlimentaire("A1", "Riz", 20.0, 100, "2027-01-01")
@@ -20,7 +18,7 @@ fun main() {
     laptop.ajouterStock(3)
     println("Stock après ajout : ${laptop.stock}") // 10
 
-    // Jalon 3 : test du cycle de vie des commandes
+    //  test du cycle de vie des commandes
     println("\n2. COMMANDES ET STATUTS")
     val sara = Client(2, "Sara", "Marrakech")
     val amine = Client(1, "Amine", "Safi")
@@ -57,11 +55,11 @@ fun main() {
     println("Paiement c6 : ${c6.payer()}") // true
     println("Les 6 commandes : ${listOf(c1, c2, c3, c4, c5, c6).map { it.statut }}")
 
-    // Bonus 1 : enum
+    // enum
     println("Nombre de statuts possibles : ${StatutCommande.values().size}") // 4
     println("Le statut de c1 est SHIPPED : ${c1.statut == StatutCommande.SHIPPED}") // true
 
-    // Partie 2 : Boutique
+    // Boutique
     println("\n3. BOUTIQUE")
     val boutique = Boutique()
     println("Ajouter laptop : ${boutique.ajouter(laptop)}") // true
@@ -76,7 +74,7 @@ fun main() {
     println("Supprimer le laptop : ${boutique.supprimer(laptop)}") // true
     println("Index E3 : ${boutique.indiceProduit("E3")}") // 0
 
-    // Partie 3 : toutes les questions d'analyse du TP, sans for/while.
+    //  toutes les questions d'analyse du TP, sans for/while.
     println("\n4. ANALYSE DES VENTES")
     val commandes = jeuDeDonnees()
 
@@ -115,7 +113,7 @@ fun main() {
     println("Q11 - Total payé : ${totalPayees(commandes)}")
     println("Q11 - Total annulé : ${totalAnnulees(commandes)}")
 
-    // Partie 4 : extensions et fonctions d'ordre supérieur
+    //  extensions et fonctions d'ordre supérieur
     println("\n5. EXTENSIONS ET LAMBDAS")
     println("Téléphone valide : ${"+212600000000".isValidPhoneNumber()}") // true
     println("Téléphone sans + : ${"0600000000".isValidPhoneNumber()}") // false
@@ -128,7 +126,7 @@ fun main() {
     println("Lambda avec it : ${filtrerCommandes(commandes) { it.client.ville == "Safi" }.size}") // 3
     println("Référence ::estPayee : ${filtrerCommandes(commandes, ::estPayee).size}") // 5
 
-    // Bonus 2 : historique dans un fichier texte.
+    //  historique dans un fichier texte.
     ecrireHistorique(sara, commandes)
     println("Historique écrit dans Client${sara.id}.txt")
 
