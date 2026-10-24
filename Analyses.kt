@@ -17,7 +17,7 @@ fun filtrerCommandes(
     critere: (Commande) -> Boolean
 ): List<Commande> = commandes.filter(critere)
 
-// Jeu de données du TP : les statuts et montants correspondent au tableau de référence.
+//  les statuts et montants correspondent au tableau de référence.
 fun jeuDeDonnees(): List<Commande> {
     val amine = Client(1, "Amine", "Safi")
     val sara = Client(2, "Sara", "Marrakech")
@@ -49,7 +49,7 @@ fun jeuDeDonnees(): List<Commande> {
     return listOf(c1, c2, c3, c4, c5, c6, c7, c8)
 }
 
-// Bonus 2 : écrit une ligne par commande du client dans Client<id>.txt.
+//  écrit une ligne par commande du client dans Client<id>.txt.
 fun ecrireHistorique(client: Client, commandes: List<Commande>) {
     val contenu = commandes
         .filter { it.client.id == client.id }
