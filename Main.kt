@@ -74,8 +74,8 @@ fun main() {
     println("Supprimer le laptop : ${boutique.supprimer(laptop)}") // true
     println("Index E3 : ${boutique.indiceProduit("E3")}") // 0
 
-    //  toutes les questions d'analyse du TP, sans for/while.
-    println("\n4. ANALYSE DES VENTES")
+    //   sans for/while.
+    
     val commandes = jeuDeDonnees()
 
     println("Q1 - Clients et montants :")
@@ -129,6 +129,4 @@ fun main() {
     //  historique dans un fichier texte.
     ecrireHistorique(sara, commandes)
     println("Historique écrit dans Client${sara.id}.txt")
-
-    println("\nFin du programme.")
 }
