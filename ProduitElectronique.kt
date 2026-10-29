@@ -6,11 +6,12 @@ class ProduitElectronique(
     val garantieMois: Int
 ) : Produit(code, nom, prixHT, stockInitial), Remisable {
 
-    override fun prixTTC(): Double = prixHT * 1.20
-
-    override fun appliquerRemise(pourcentage: Double) {
-        if (pourcentage in 0.0..100.0) {
-            prixHT *= 1 - pourcentage / 100
+     override fun prixTTC(): Double {
+        return prixHT * 1.20
+}
+   override fun appliquerRemise(pourcentage: Double) {
+        if (pourcentage >= 0.0 && pourcentage <= 100.0) {
+            prixHT = prixHT * (1 - pourcentage / 100)
         }
     }
 }
