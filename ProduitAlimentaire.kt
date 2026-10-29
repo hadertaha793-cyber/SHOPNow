@@ -6,5 +6,7 @@ class ProduitAlimentaire(
     val dateLimite: String
 ) : Produit(code, nom, prixHT, stockInitial) {
 
-    override fun prixTTC(): Double = prixHT * 1.10
+    override fun prixTTC(): Double {
+        return prixHT * 1.10
+    }
 }
